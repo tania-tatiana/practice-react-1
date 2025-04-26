@@ -20,17 +20,19 @@
 Компонент повинен створювати наступну структуру.
 
 ```jsx
-<h3 className={style.title}>Main Statistics</h3>
+<h3 className={style.title}>{title}</h3>
 
 <ul className={style.list}>
  {/* Довільна кіл-сть
     <li className={style.item}>
       <StatisticsItem/>
     </li>
-*/} 
+*/}
 </ul>
 ```
+
 Компонент `StatisticsItem` повинен створювати наступну структуру.
+
 ```jsx
 <>
   {/* Тут повинна бути іконка */}
@@ -50,5 +52,5 @@
 import stats from 'data/stats.json';
 
 <Statistics title="Main Statistics" stats={stats} />;
-<Statistics stats={data} />;
+<Statistics stats={stats} />;
 ```
